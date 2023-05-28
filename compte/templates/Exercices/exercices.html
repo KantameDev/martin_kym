@@ -1,0 +1,31 @@
+{% extends 'blog/navfoot.html'%}
+
+  {% block content %}
+    
+    <div class="col-md-7 mt-4 mb-4" style=" margin: 0 auto; text-align: left;text-align: center;">
+        <div class="card-header text-white bg-primary ">
+            Exercices et Corrections
+        </div>
+        <div class="card card-body">
+            <table class="table table-sm">
+                <tr>
+                    <th>Libellé</th>
+                    <th>Publé le:</th>
+                    <th>Classe</th>
+                    <th>Sujets</th>
+                    <th>Corrigés</th>
+                </tr>
+                {% for exercice in exercices %}
+                    <tr>  
+                    <th style="text-align: left;">{{exercice.nom}}</th>
+                    <th>{{exercice.date_creation}}</th>
+                    <th>{{exercice.niveau}}</th>
+                    <th><a href="{% url 'telecharge_fichier' exercice.id %}">Télécharger</a></th>
+                    <th><a href="{% url 'telecharge_correct' exercice.id %}">Télécharger</a></th>
+                    </tr>
+                    
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+  {% endblock %}

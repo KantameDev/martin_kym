@@ -1,0 +1,61 @@
+{% extends 'blog/navfoot.html'%}
+
+  {% block content %}
+    <div class="card mt-2 mb-3 text-white bg-warning" style="width: 70%; margin: 0 auto; text-align: center;">
+        <div class="card-header">
+            FORMATION LATEX
+        </div>
+    </div>
+
+    
+    <div class="card mt-2 mb-2 " style="width: 70%; margin: 0 auto; text-align: left;">
+        <div class="card-header text-white bg-secondary">
+            Chapitre 1 : Historique de LateX
+        </div>
+        <div class="card-body">
+            <h5>1-Introduction</h5>
+            <p>Donald KNUTH l’auteur de TEX est un un mathématicien et informaticien fécond doublé d’un
+                esthète passionné de typographie. Ce n’est pas un hasard si TEX fait allusion à τεχνη qui signifie
+                à la fois métier, art, puissance.</p>
+            <h6>L'auteur</h6>
+            <p>Donald KNUTH est un pionnier de l’algorithmique et un informaticien renommé. En 1962, cet
+                expert en compilateurs commence la rédaction d’un ouvrage dont le sujet s’élargit au fur et à mesure
+                de la rédaction. Au bout de trois ans, il y a de quoi faire un livre de 2000 pages. Ce sera la matière de
+                son chef-d’œuvre prévu en 7 tomes :The Art of Computer Programming dont le tome 5 est attendu
+                vers 2015.
+                </p>
+            <h5>2-L’histoire</h5>
+            <p>Le premier tome de The Art of Computer Programming a été composé traditionellement avec une
+                machine Monotype utilisant du plomb typographique qui permettait de d’imprimer des ouvrages de
+                qualité.<br>
+                Quand il reçoit, en 1977, les épreuves de la deuxième édition du deuxième tome, il est affligé 1
+                par la qualité de la typographie. . . Le procédé traditionnel avait fait place à la photocomposition
+                mais les fontes et la gestions des espaces était de mauvaise qualité.<br>
+                  Peu de temps après, il est amené à travailler sur un livre d’intelligence artificielle qui a été
+                amené sur bandes magnétiques et imprimé avec une imprimante haute définition ; il constate que
+                le rendu est meilleur que celui de son dernier livre. Il entrevoit alors la possibilité de ramener l’impression de livres a un problème purement informatique, dégagé des problèmes de chimie, d’optique,
+                de métallurgie. . .<br>
+                Il décide de se consacrer à ce qu’il appelle la typographie digitale avec deux objectifs :<br>
+                – obtenir une qualité supérieure à tout ce qui existait ;<br>
+                – produire des documents pérennes qui puissent être utilisables dans 100 ans<br>
+                Donald KNUTH crée simultanément METAFONT et TeX qui sont à la fois des programmes et des
+                langages . Le premier s’occupe de la création des fontes à l’aide de commandes de description, le
+                second s’occupe de la composition. En 1978 sort une première version de TEX mais il continuera à
+                travailler sur TEX jusqu’en 1989. <br>
+                Pour les versions suivantes, à partir de 1981, il programme en Web, un langage dont il est l’auteur et qui est le premier exemple de Literate programming, un concept dont il est également l’auteur et qui repose sur l’idée qu’un programme informatique doit pouvoir être lu aussi bien par un
+                humain qu’un compilateur.<br>
+                En 1982, Leslie LAMPORT crée LaTeX, une surcouche de TEX qui rend le travail de rédaction
+                beaucoup plus simple La Philosophie de LaTeX est : séparer la forme et le fond afin de mieux se
+                concentrer sur le contenu . Les apports de LATEX concernent la gestion des fontes, de la couleur et du
+                graphisme.<br>
+                De nombreux dérivés de TEX et LATEX sont actuellement en développement, comme Omega qui
+                a pour projet de rendre plus facile l’écriture de documents utilisant plusieurs alphabets différents
+                en se basant sur un encodage sur 16 bits et LuaTeX qui permet de faire coopérer TEX et le langage
+                Lua.
+
+            </p>
+        </div>
+    </div>
+    
+    
+  {% endblock %}

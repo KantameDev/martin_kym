@@ -1,0 +1,31 @@
+{% extends 'blog/navfoot.html'%}
+
+  {% block content %}
+    
+    <div class="col-md-7 mt-4 mb-4" style=" margin: 0 auto; text-align: left;text-align: center;">
+        <div class="card-header text-white bg-primary ">
+            FCHES PEDAGOGIQUES
+        </div>
+        <div class="card card-body">
+            <table class="table table-sm">
+                <tr>
+                    <th>Thème</th>
+                    <th>Lecon</th>
+                    <th>Publé le:</th>
+                    <th>Classe</th>
+                    <th>Fiche</th>
+                    
+                </tr>
+                {% for fiche in fiches %}
+                    <tr>  
+                    <th style="text-align: left;">{{fiche.theme}}</th>
+                    <th style="text-align: left;">{{fiche.lecon}}</th>
+                    <th>{{fiche.date_creation}}</th>
+                    <th>{{fiche.niveau}}</th>
+                    <th><a href="{% url 'telecharge_fiche' fiche.id %}">Télécharger</a></th>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+  {% endblock %}
